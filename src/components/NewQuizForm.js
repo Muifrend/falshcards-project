@@ -27,9 +27,9 @@ export default function NewQuizForm() {
     })
     // create the new cards here and add each card's id to cardIds
     // create the new quiz here
-    if(topicId) {
+    
     dispatch(addQuizAndQuizIdThunk({ id: uuidv4(), name: name, topicId: topicId, cardIds: cardIds}))
-    history.push(ROUTES.quizzesRoute());}
+    history.push(ROUTES.quizzesRoute());
   };
 
   const addCardInputs = (e) => {
